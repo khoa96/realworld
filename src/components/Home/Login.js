@@ -2,9 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import ListErrors from './ListErrors';
 import { REGISTER } from '../../constanst/router';
-
-export default class Login extends Component {
+import { connect } from 'react-redux';
+class Login extends Component {
+    componentDidMount() {
+      this.props.dispatch({type: 'TEST'})
+    }
+    
     render() {
+        console.log(this.props.login);
         return (
             <div className="auth-page">
                 <div className="container page">
@@ -51,3 +56,10 @@ export default class Login extends Component {
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        login: state.loginReducer
+    }
+}
+export default connect(mapStateToProps)(Login);

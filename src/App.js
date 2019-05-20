@@ -7,6 +7,7 @@ import Editor from './components/Home/Editor';
 import Setting from './components/Home/Setting';
 import Login from './components/Home/Login';
 import Register from './components/Home/Register';
+import { PrivateRouter }  from './authen/PrivateRouter';
 
 export default class App extends Component {
   render() {
@@ -16,11 +17,11 @@ export default class App extends Component {
           <Header />
           <Switch>
             <Route path={HOME} exact={true} component={Profile} />
-            <Route path={EDITOR} exact={true} component={Editor} />
-            <Route path={SETTING} exact={true} component={Setting} />
+            <PrivateRouter path={EDITOR} exact={true} component={Editor} />
+            <PrivateRouter path={SETTING} exact={true} component={Setting} />
             <Route path={LOGIN} exact={true} component={Login} />
             <Route path={REGISTER} exact={true} component={Register} />
-            <Route path={SETTING} exact={true} component={Setting} />
+            <PrivateRouter path={SETTING} exact={true} component={Setting} />
           </Switch>
         </Routers>
       </React.Fragment>
