@@ -41,7 +41,7 @@ export default class Header extends Component {
                                     to="/user"
                                     className="nav-link">
                                     <img src="https://scontent.fhan5-4.fna.fbcdn.net/v/t1.0-9/31493874_932902653554972_5737681810414895104_n.jpg?_nc_cat=104&_nc_oc=AQlewgnh7qTvqjy4IhIEvAnjvcJ2glWxuUP-NzxTemJJBTQYtPO6LCQwioWlXb_ozdQ&_nc_ht=scontent.fhan5-4.fna&oh=c54e1f09e7decdcbe816146fdb6d958b&oe=5D6B10D6" className="user-pic" alt="nguyen dang khoa" />
-                                    Nguyen Dang Khoa
+                                    Nguyen Dang Khoa 1213
                                 </Link>
                             </li>
                         </ul>
