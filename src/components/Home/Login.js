@@ -43,7 +43,7 @@ class Login extends Component {
                                         className="btn btn-lg btn-primary pull-xs-right"
                                         type="submit"
                                     >
-                                        Sign in
+                                        Login
                                      </button>
 
                                 </fieldset>
